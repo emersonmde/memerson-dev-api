@@ -1,0 +1,8 @@
+{
+  "body": "{\"title\":\"hello world\",\"body\":\"this is a test post\"}",
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "USER-TEST-1234"
+    }
+  }
+}
