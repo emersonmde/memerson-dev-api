@@ -37,6 +37,11 @@ provider:
         - dynamodb:DeleteItem
       Resource:
         - "Fn::GetAtt": [ PostsTable, Arn ]
+        - "Fn::Join":
+          - ''
+          -
+            - "Fn::GetAtt": [ PostsTable, Arn ]
+            - "/index/*"
 
 functions:
   create:
